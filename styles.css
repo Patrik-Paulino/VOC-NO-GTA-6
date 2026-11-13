@@ -1,0 +1,109 @@
+/* padrão de todo inicio de site */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bangers", system-ui;
+}
+
+html {
+    height: 100%;
+}
+
+/* coloca uma imagem de fundo no site */
+
+body {
+    background-image: url("img/background2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.nome {
+    /* troca a cor do texto e o tamanho da fonte */
+    color: #ff3cac;
+    font-size: 360px;
+    position: absolute;
+    bottom: 400px;
+    /*alinhamento do texto*/
+    text-align: center;
+    /*largura*/
+    width: 100%;
+}
+
+.personagem {
+    position: absolute;
+    bottom: 0px;
+    /*altura da imagem*/
+    height: 700px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.textos {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.etiqueta {
+    font-size: 26px;
+    color: #ffd319;
+}
+
+h1 {
+    font-size: 72px;
+    color: #ffffff;
+}
+
+.texto-apoio {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.menu {
+    position: absolute;
+    bottom: 40px;
+
+    /*caixa agora é flexível, ou seja, os elementos dentro dela podem se alinhar de forma diferente*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*largura*/
+    width: 100%;
+    gap: 20px;
+}
+
+.avatar {
+width: 60px;
+height: 60px;
+/*arredonda a imagem*/
+border-radius: 50%;
+/* como a imagem é maior que a caixa, ela vai cortar a imagem e mostrar só o que cabe na caixa */
+object-fit: cover;
+object-position: top;
+border: 2px solid #ffffff;
+
+}
+
+.voce {
+    background-color: #ffd319;
+    /* espaçamento interno da caixa */
+    padding: 20px;
+    border-radius: 50%;
+}
+/* 
+
+h1 - seletor
+color - propriedade
+blue - valor
+SEMPRE - terminar com ;
+SEMPRE colocar : entre propriedade e valor
+
+* = altera a cor, tamanho, fonte etc de todos os elementos do site
+
+bottom - baixo
+top - cima
+left - esquerda
+right - direita
+*/
