@@ -1,69 +1,69 @@
 <!DOCTYPE html>
-<!-- versão do site -->
+<!-- VERSÃO DO HTML (NOVA 5) -->
 
-<!--DENTRO DA TAG HTML FICA TODO MEU SITE (WEB)-->
+<!-- DENTRO DA TAG HTML FICA TODO O MEU SISTEMA WEB(SITE) -->
 <html lang="pt-br">
 
-<!-- Cabeça (head) são as CONFIGURAÇÕES GERAIS do site-->
+<!-- Cabeça(head) Configurações GERAIS do site -->
 
 <head>
-
-    <!--Padrão caracteres-->
+    <!-- Padrão Caracteres -->
     <meta charset="UTF-8">
 
-    <!--COMPATIVEL PARA CELULAR E COMPUTADORES-->
+    <!-- COMPATIVEL COM CELULARES E COMPUTADORES -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--titulo do site (aba do navegador)-->
-    <title>Document</title>
-    <!-- conexão do CSS-->
     <link rel="stylesheet" href="styles.css">
-    <!-- instalação da fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <!-- 
-   SELETOR = QUEM EU QUERO MUDAR O ESTILO
-   PROPRIEDADE = O QUE EU VOU MUDAR (cor, fonte tamanho etc)
-   VALOR = A COR QUE EU VOU COLOCAR, O TAMANHO QUE EU VOU COLOCAR, A FONTE QUE EU VOU COLOCAR
-
-   -->
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- TITULO DO SITE -->
+    <title>Document</title>
 </head>
 
-<!--tudo que enxergo no site fica dentro da tag body-->
+<!-- TUDO QUE EU ENXERGO NO SITE -->
 
 <body>
-    <p class="nome">LUCIA</p>
+    <p class="nome">Lucia</p>
 
     <img class="personagem" src="img/lucia.png">
-    <!-- SRC = SOURCE = ORIGEM DA IMAGEM (QUAL PASTA A IMAGEM ESTÁ)-->
+    <!-- source = ORIGEM(onde ela tá?) -->
 
-    <div class=" textos">
+    <div class="textos">
 
-        <p class="etiqueta">Selecione seu personagem</p>
-        <h1>Não é só <br>um jogo</h1>
-        <!--break = quebra de linha = <br> -->
-        <p class="texto-apoio">Escolha uma lenda de DevCity ou tire uma selfie e vire uma</p>
+        <p class="etiqueta">Selecione o seu Personagem</p>
+        <h1>Não é só <br>um Jogo</h1>
+        <p class="texto-apoio">Escolha uma lenda de Dev City. Ou tire uma selfie e vire uma.</p>
 
     </div>
 
+    <!-- onclick - O que deve ACONTECER QUANDO EU CLIC -->
     <div class="menu">
 
-
-        <img onclick="escolherPersonagem('Lucia', 'img/lucia.png','#ff3cac' )" class="avatar" src="img/lucia.png">
+        <img onclick="escolherPersonagem('Lucia', 'img/lucia.png', '#ff3cac')" class="avatar" src="img/lucia.png">
 
         <img onclick="escolherPersonagem('Jason', 'img/jason.png', '#00b2c9')" class="avatar" src="img/jason.png">
 
         <img onclick="escolherPersonagem('CJ', 'img/cj.png', '#7ed37e')" class="avatar" src="img/cj.png">
 
-        <button class="voce">📸</button>
+        <label class="voce">📸
+
+            <!-- file(arquivos) accept(aceita) image/todas 
+             hidden (escondido)
+             change (quando mudar algo, faça algo)
+             this (isso aqui) - tudo que tem no input e enviar
+            -->
+            <input type="file" accept="image/*" hidden onchange="lerFoto(this)">
+        </label>
 
     </div>
 
 </body>
+<script src=" https://js.puter.com/v2/ "></script>
 <script src="scripts.js">
-
+    // source = ORIGEM(onde ele tá?)
 
 </script>
 
